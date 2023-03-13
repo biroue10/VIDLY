@@ -10,4 +10,4 @@ def index(request):
     context = {
         'movies': movies
     }
-    return render(request, 'index.html', context)
+    return render(request, 'movies/index.html', context)
