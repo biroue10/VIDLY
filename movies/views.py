@@ -1,8 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Movie
 # Create your views here.
 
 
 def index(request):
     """This is our first vue function"""
-    return HttpResponse("hello world")
+    movies = Movie.objects.all()
+    context = {
+        'movies': movies
+    }
+    return render(request, 'index.html', context)
