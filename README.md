@@ -1,0 +1,1 @@
+This is a django project call Vidly which present some movies with a certain charracteritics as title, release year, number in stock, daily rate, genre, date created. we also publish an api for our app you
